@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+/* Constant styles  */
+@font-face {
+  font-family: atthin;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-100-thin.otf");
+}
+@font-face {
+  font-family: atexlig;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-200-extralight.otf");
+}
+@font-face {
+  font-family: atlig;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-300-light.otf");
+}
+@font-face {
+  font-family: atregul;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-400-regular.otf");
+}
+@font-face {
+  font-family: atmed;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-500-medium.otf");
+}
+@font-face {
+  font-family: atsem;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-600-semibold.otf");
+}
+@font-face {
+  font-family: atbold;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-700-bold.otf");
+}
+@font-face {
+  font-family: atextbold;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-800-extrabold.otf");
+}
+@font-face {
+  font-family: atblack;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-900-black.otf");
+}
+@font-face {
+  font-family: cons;
+  src: url("../fonts/Fontspring-DEMO-artegra_sans-condensed-alt-400-regular.otf");
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  transition: all 0.4s ease-in;
+  font-family: atregul;
+  font-weight: 400;
+}
+
+body {
+  font-family: atregul;
+  font-weight: 400;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* // Constant Styles */
+ul {
+  margin-bottom: 0;
+}
+
+.form-control {
+  border-radius: 7px;
+  background-color: rgba(245, 247, 250, 0.386);
+}
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Main Style */
+.btn_style {
+  background-color: #ccff7d;
+  border: 1px solid #000000;
+  font-size: 1.1rem;
+  color: #000;
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin-top: 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: -6px 5px 1px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out !important;
+}
+.btn_style:hover {
+  color: #ed4a25;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_img {
+  height: 100vh;
+  position: relative;
+}
+.card_img .img_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card_img .img_parent img,
+.card_img .img_parent video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+body.modal-open .mm-slideout {
+  z-index: auto;
+}
+
+.pd-100 {
+  padding: 0 300px;
+}
+
+@media (max-width: 1920px) {
+  .pd-100 {
+    padding: 0 170px;
+  }
+}
+@media (max-width: 1600px) {
+  .pd-100 {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1440px) {
+  .pd-100 {
+    padding: 0 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .pd-100 {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 600px) {
+  .pd-100 {
+    padding: 0 20px;
+  }
+}
+/* ================================================================ */
+.custom_navbar {
+  padding: 27px 0;
+  background-color: #efeae9;
+}
+.custom_navbar .na_item {
+  margin-left: 20px;
+}
+.custom_navbar .na_item .nav_link {
+  color: #000;
+  font-size: 0.9rem;
+  font-family: atsem;
+}
+.custom_navbar .na_item .nav_link:hover {
+  color: #ed4a25;
+}
+.custom_navbar .na_item:last-child a {
+  color: #fff;
+  background-color: #ed4a25;
+  padding: 14px 20px 13px 20px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ed4a25;
+}
+.custom_navbar .na_item:last-child a:hover {
+  background-color: #fff;
+  color: #ed4a25;
+}
+
+.custom_header {
+  padding: 100px 0;
+  background-color: #efeae9;
+}
+.custom_header .header_content .header_title {
+  font-size: 2rem;
+  font-family: atextbold;
+  color: #000;
+}
+.custom_header .header_content .header_text {
+  font-size: 1.2rem;
+  font-family: atsem;
+  margin: 25px 0;
+  color: #000;
+}
+.custom_header .header_content .header_btn .btn_custom {
+  background-color: #ed4a25;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: atsem;
+  border: 1px solid #ed4a25;
+}
+.custom_header .header_content .header_btn .btn_custom:hover {
+  background-color: #fff;
+  color: #ed4a25;
+}
+.custom_header .header_img {
+  text-align: center;
+  position: relative;
+}
+.custom_header .header_img .main_img {
+  position: relative;
+  z-index: 5;
+}
+.custom_header .header_img .first_arrows {
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+}
+.custom_header .header_img .last_arrows {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+}
+
+.track_yout_shipment_wrapper {
+  background-color: #efeae9;
+  padding-top: 50px;
+}
+.track_yout_shipment_wrapper .track_yout_shipment {
+  background-position: right !important;
+  min-height: 386px;
+  padding: 40px;
+  border-radius: 30px;
+}
+.track_yout_shipment_wrapper .track_your_shipment_box {
+  background-color: #fff;
+  padding: 48px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 395px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.track_yout_shipment_wrapper .track_your_shipment_box h5 {
+  font-size: 1.4rem;
+  font-family: atbold;
+  color: #ed4a25;
+}
+.track_yout_shipment_wrapper .track_your_shipment_box .form-control {
+  margin: 20px 0;
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.track_yout_shipment_wrapper .track_your_shipment_box .btn_custom {
+  background-color: #ed4a25;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: atsem;
+  border: 1px solid #ed4a25;
+}
+.track_yout_shipment_wrapper .track_your_shipment_box .btn_custom:hover {
+  background-color: #fff;
+  color: #ed4a25;
+}
+
+.main_content {
+  background-color: #efeae9;
+  padding: 65px 0;
+  padding-bottom: 150px;
+  position: relative;
+}
+.main_content .top_black_section {
+  position: absolute;
+  background-color: #000;
+  height: 465px;
+  width: 100%;
+}
+
+.get_quto {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 50px 40px;
+  position: relative;
+  margin-top: 65px;
+}
+.get_quto h1 {
+  color: #ed4a25;
+  font-size: 1.3rem;
+  font-family: atbold;
+  position: relative;
+  margin-bottom: 60px;
+}
+.get_quto h1::after {
+  bottom: -30px;
+  width: 100%;
+  right: 0;
+  height: 1px;
+  background-color: #e6e6e6;
+  content: "";
+  position: absolute;
+}
+.get_quto h5 {
+  color: #000;
+  font-family: atsem;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.get_quto .form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.get_quto .form-group .arrow_img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.get_quto .form-control {
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.get_quto .form-control:focus {
+  outline: 1px solid #ed4a25 !important;
+  box-shadow: none !important;
+}
+.get_quto .btn_custom {
+  background-color: #ed4a25;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: atsem;
+  border: 1px solid #ed4a25;
+}
+.get_quto .btn_custom:hover {
+  background-color: #fff;
+  color: #ed4a25;
+}
+.get_quto .get_quto_img {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 17px;
+  height: 80% !important;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.get_quto .get_quto_img img {
+  border-radius: 17px;
+  background-position: center;
+  background-size: cover;
+}
+
+.why_choose {
+  margin-top: 100px;
+}
+.why_choose .head {
+  text-align: center;
+}
+.why_choose .head h5 {
+  color: #ed4a25;
+  font-family: atextbold;
+  font-size: 1.3rem;
+}
+
+.why_choose_card {
+  background-color: #fff;
+  padding: 27px 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+  min-height: 280px;
+}
+.why_choose_card .card_icon {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.why_choose_card h5 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-family: atsem;
+  margin-top: 15px;
+}
+.why_choose_card p {
+  font-size: 0.9rem;
+}
+
+.affordable_shipping {
+  margin-top: 100px;
+}
+.affordable_shipping .head {
+  text-align: center;
+}
+.affordable_shipping .head h5 {
+  color: #ed4a25;
+  font-family: atextbold;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.affordable_shipping .head p {
+  font-family: atsem;
+  margin: 0;
+}
+
+.affordable_shipping_card {
+  background-color: #fff;
+  padding: 54px 55px;
+  margin-top: 51px;
+  border-radius: 40px;
+}
+.affordable_shipping_card .card_content h5,
+.affordable_shipping_card .card_content h1 {
+  text-align: center;
+}
+.affordable_shipping_card .card_content h5 {
+  font-size: 1.1rem;
+  font-family: atsem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.affordable_shipping_card .card_content h1 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.affordable_shipping_card .card_content h1 span {
+  font-family: "Roboto Mono", serif;
+  font-weight: 900;
+}
+.affordable_shipping_card .card_content h1 .slash {
+  font-size: 1rem;
+  color: #000;
+}
+.affordable_shipping_card .card_content h1 .word {
+  color: #ed4a25;
+  font-size: 2rem;
+  font-family: atbold;
+}
+.affordable_shipping_card .card_content li {
+  margin-bottom: 30px;
+}
+.affordable_shipping_card .card_content li img {
+  margin-right: 15px;
+}
+.affordable_shipping_card .card_content .btn_select_plan {
+  text-align: center;
+}
+.affordable_shipping_card .card_content .btn_select_plan .btn_custom {
+  background-color: #fff;
+  margin: auto;
+  color: #ed4a25;
+  padding: 15px 40px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: atsem;
+  border: 1px solid #ed4a25;
+}
+.affordable_shipping_card .card_content .btn_select_plan .btn_custom:hover {
+  background-color: #ed4a25;
+  color: #fff;
+}
+
+.middle_card {
+  border: 3px solid #ed4a25;
+}
+
+.ready_to_sign_up {
+  margin: 100px 0;
+}
+.ready_to_sign_up .head {
+  text-align: center;
+}
+.ready_to_sign_up .head h5 {
+  color: #ed4a25;
+  font-family: atextbold;
+  font-size: 2rem;
+  margin: 0;
+}
+.ready_to_sign_up .btn_custom {
+  background-color: #ed4a25;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: atsem;
+  border: 1px solid #ed4a25;
+}
+.ready_to_sign_up .btn_custom:hover {
+  background-color: #fff;
+  color: #ed4a25;
+}
+
+.faq .head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.faq .head h5 {
+  color: #ed4a25;
+  font-family: atextbold;
+  font-size: 2rem;
+  margin: 0;
+}
+.faq .accordion-button::after {
+  background-image: url("../images/Right arrow.svg");
+  margin-left: auto;
+  margin-right: inherit;
+}
+.faq .accordion-flush .accordion-item {
+  border-radius: 10px;
+}
+.faq .accordion-flush .accordion-item:nth-child(even) {
+  background-color: #efeae9;
+}
+.faq .accordion-flush .accordion-item:nth-child(even) .accordion-button {
+  background-color: #efeae9;
+}
+.faq .accordion-flush .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
+  background-color: #efeae9 !important;
+}
+.faq .accordion-button {
+  text-align: left;
+}
+.faq .accordion-header {
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.faq .accordion-header .accordion-button {
+  font-family: atmed;
+}
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/Right arrow.svg");
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+.faq .accordion-button:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.faq .accordion-button:not(.collapsed) {
+  color: #000;
+}
+
+.site_footer {
+  padding: 62px 0;
+  background-color: #000;
+}
+.site_footer .footer_conte p {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 0.9rem;
+  margin-top: 25px;
+  line-height: 20px;
+}
+.site_footer .footer_conte_links .links li {
+  color: #fff;
+}
+.site_footer .footer_conte_links .links a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: atmed;
+}
+.site_footer .footer_conte_links .footer_socia h5 {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.site_footer .footer_conte_links .footer_socia a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 8px;
+  background-color: #fff;
+  color: #000;
+}
+.site_footer .footer_conte_links .footer_socia a:hover {
+  background-color: #ed4a25;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .get_quto .get_quto_img {
+    width: 260px;
+    height: 70%;
+  }
+  .affordable_shipping_card {
+    background-color: #fff;
+    padding: 54px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .custom_navbar .navbar_links {
+    display: none;
+  }
+  .get_quto .get_quto_img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .why_choose_card {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .site_footer .footer_socia {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .site_footer .footer_socia ul {
+    justify-content: center !important;
+  }
+}
+/* ================================================================ */
+/* Shared styles  */
+.track_yout_shipment_wrapper .track_yout_shipment {
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
