@@ -191,10 +191,77 @@ body.modal-open .mm-slideout {
     padding: 0 20px;
   }
 }
+#menu .mm-listitem:after {
+  inset-inline-start: 0px;
+}
+#menu li:last-child a {
+  color: #ed4a25;
+  font-family: atbold;
+}
+
+.mm-navbar__title > span {
+  display: none;
+}
+
+.splach {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+}
+.splach .splach_front {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splach .splach_front img {
+  animation: logoanim 1s 1s linear infinite;
+}
+.splach .splach_behind {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splach .splach_behind img {
+  width: 150px;
+}
+
+@keyframes logoanim {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* ================================================================ */
 .custom_navbar {
   padding: 27px 0;
   background-color: #efeae9;
+}
+.custom_navbar .nav_icon {
+  display: none;
+  text-align: right;
+}
+.custom_navbar .nav_icon i {
+  color: #000;
+  font-size: 1.5rem;
 }
 .custom_navbar .na_item {
   margin-left: 20px;
@@ -658,6 +725,9 @@ body.modal-open .mm-slideout {
   .custom_navbar .navbar_links {
     display: none;
   }
+  .custom_navbar .nav_icon {
+    display: block;
+  }
   .get_quto .get_quto_img {
     display: none;
   }
@@ -674,6 +744,15 @@ body.modal-open .mm-slideout {
   }
   .site_footer .footer_socia ul {
     justify-content: center !important;
+  }
+  .get_quto {
+    padding: 50px 16px;
+  }
+  .affordable_shipping_card .card_content li img {
+    margin-right: 6px;
+  }
+  .ready_to_sign_up .head h5 {
+    font-size: 1.5rem;
   }
 }
 /* ================================================================ */
