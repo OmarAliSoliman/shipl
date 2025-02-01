@@ -564,6 +564,7 @@ body.modal-open .mm-slideout {
 }
 .affordable_shipping_card .card_content li {
   margin-bottom: 30px;
+  display: flex;
 }
 .affordable_shipping_card .card_content li img {
   margin-right: 15px;

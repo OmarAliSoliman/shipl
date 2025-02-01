@@ -1,57 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 /* Constant styles  */
-@font-face {
-  font-family: atthin;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-100-thin.otf");
-}
-@font-face {
-  font-family: atexlig;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-200-extralight.otf");
-}
-@font-face {
-  font-family: atlig;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-300-light.otf");
-}
-@font-face {
-  font-family: atregul;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-400-regular.otf");
-}
-@font-face {
-  font-family: atmed;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-500-medium.otf");
-}
-@font-face {
-  font-family: atsem;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-600-semibold.otf");
-}
-@font-face {
-  font-family: atbold;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-700-bold.otf");
-}
-@font-face {
-  font-family: atextbold;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-800-extrabold.otf");
-}
-@font-face {
-  font-family: atblack;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-extended-alt-900-black.otf");
-}
-@font-face {
-  font-family: cons;
-  src: url("../fonts/Fontspring-DEMO-artegra_sans-condensed-alt-400-regular.otf");
-}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
   transition: all 0.4s ease-in;
-  font-family: atregul;
+  font-family: "Cairo", serif;
   direction: rtl;
   font-weight: 400;
 }
 
 body {
-  font-family: atregul;
+  font-family: "Cairo", serif;
   font-weight: 400;
 }
 
@@ -197,7 +158,8 @@ body.modal-open .mm-slideout {
 }
 #menu li:last-child a {
   color: #ed4a25;
-  font-family: atbold;
+  font-family: "Cairo", serif;
+  font-weight: 700;
 }
 .mm-navbar__title>span{
   display: none;
@@ -271,7 +233,8 @@ body.modal-open .mm-slideout {
 .custom_navbar .na_item .nav_link {
   color: #000;
   font-size: 0.9rem;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
 }
 .custom_navbar .na_item .nav_link:hover {
   color: #ed4a25;
@@ -295,12 +258,15 @@ body.modal-open .mm-slideout {
 }
 .custom_header .header_content .header_title {
   font-size: 2rem;
-  font-family: atextbold;
+  
+  font-family: "Cairo", serif;
+  font-weight: 800;
   color: #000;
 }
 .custom_header .header_content .header_text {
   font-size: 1.2rem;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   margin: 25px 0;
   color: #000;
 }
@@ -312,7 +278,8 @@ body.modal-open .mm-slideout {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   border: 1px solid #ed4a25;
 }
 .custom_header .header_content .header_btn .btn_custom:hover {
@@ -359,7 +326,8 @@ body.modal-open .mm-slideout {
 }
 .track_yout_shipment_wrapper .track_your_shipment_box h5 {
   font-size: 1.4rem;
-  font-family: atbold;
+  font-family: "Cairo", serif;
+  font-weight: 700;
   color: #ed4a25;
 }
 .track_yout_shipment_wrapper .track_your_shipment_box .form-control {
@@ -376,7 +344,8 @@ body.modal-open .mm-slideout {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   border: 1px solid #ed4a25;
 }
 .track_yout_shipment_wrapper .track_your_shipment_box .btn_custom:hover {
@@ -407,7 +376,8 @@ body.modal-open .mm-slideout {
 .get_quto h1 {
   color: #ed4a25;
   font-size: 1.3rem;
-  font-family: atbold;
+  font-family: "Cairo", serif;
+  font-weight: 700;
   position: relative;
   margin-bottom: 60px;
 }
@@ -422,7 +392,8 @@ body.modal-open .mm-slideout {
 }
 .get_quto h5 {
   color: #000;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -455,7 +426,8 @@ body.modal-open .mm-slideout {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   border: 1px solid #ed4a25;
 }
 .get_quto .btn_custom:hover {
@@ -487,7 +459,9 @@ body.modal-open .mm-slideout {
 }
 .why_choose .head h5 {
   color: #ed4a25;
-  font-family: atextbold;
+  
+  font-family: "Cairo", serif;
+  font-weight: 800;
   font-size: 1.3rem;
 }
 
@@ -506,7 +480,8 @@ body.modal-open .mm-slideout {
 .why_choose_card h5 {
   margin: 10px 0;
   font-size: 1.1rem;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   margin-top: 15px;
 }
 .why_choose_card p {
@@ -521,12 +496,15 @@ body.modal-open .mm-slideout {
 }
 .affordable_shipping .head h5 {
   color: #ed4a25;
-  font-family: atextbold;
+  
+  font-family: "Cairo", serif;
+  font-weight: 800;
   font-size: 1.3rem;
   margin: 0;
 }
 .affordable_shipping .head p {
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -542,7 +520,8 @@ body.modal-open .mm-slideout {
 }
 .affordable_shipping_card .card_content h5 {
   font-size: 1.1rem;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -562,10 +541,12 @@ body.modal-open .mm-slideout {
 .affordable_shipping_card .card_content h1 .word {
   color: #ed4a25;
   font-size: 2rem;
-  font-family: atbold;
+  font-family: "Cairo", serif;
+  font-weight: 700;
 }
 .affordable_shipping_card .card_content li {
   margin-bottom: 30px;
+  display: flex;
 }
 .affordable_shipping_card .card_content li img {
   margin-left: 15px;
@@ -582,7 +563,8 @@ body.modal-open .mm-slideout {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   border: 1px solid #ed4a25;
 }
 .affordable_shipping_card .card_content .btn_select_plan .btn_custom:hover {
@@ -602,7 +584,9 @@ body.modal-open .mm-slideout {
 }
 .ready_to_sign_up .head h5 {
   color: #ed4a25;
-  font-family: atextbold;
+  
+  font-family: "Cairo", serif;
+  font-weight: 800;
   font-size: 2rem;
   margin: 0;
 }
@@ -616,7 +600,8 @@ body.modal-open .mm-slideout {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: atsem;
+  font-family: "Cairo", serif;
+  font-weight: 600;
   border: 1px solid #ed4a25;
 }
 .ready_to_sign_up .btn_custom:hover {
@@ -630,7 +615,9 @@ body.modal-open .mm-slideout {
 }
 .faq .head h5 {
   color: #ed4a25;
-  font-family: atextbold;
+  
+  font-family: "Cairo", serif;
+  font-weight: 800;
   font-size: 2rem;
   margin: 0;
 }
@@ -659,7 +646,8 @@ body.modal-open .mm-slideout {
   border-radius: 10px;
 }
 .faq .accordion-header .accordion-button {
-  font-family: atmed;
+  font-family: "Cairo", serif;
+  font-weight: 500;
 }
 .faq .accordion-button:not(.collapsed)::after {
   background-image: url("../images/Right arrow.svg");
@@ -691,7 +679,8 @@ body.modal-open .mm-slideout {
 .site_footer .footer_conte_links .links a {
   color: #fff;
   font-size: 0.9rem;
-  font-family: atmed;
+  font-family: "Cairo", serif;
+  font-weight: 500;
 }
 .site_footer .footer_conte_links .footer_socia h5 {
   font-size: 0.9rem;
